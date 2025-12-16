@@ -1,9 +1,7 @@
 def get_random_subset_of_naturals_up_to_20():
-    """
-    Replace the code below with your own implementation.
-    """
-    ### Replace with your own code (begin) ###
-    pass
-    ### Replace with your own code (end)   ###
-
-
+    import numpy as np
+    subset = []
+    for i in range (1,21):
+        if np.random.rand()>0.5:
+            subset.append(i)
+    return np.array(subset)
